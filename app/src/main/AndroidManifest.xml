@@ -1,0 +1,113 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myproject">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Myproject"
+        tools:targetApi="31">
+
+        <!-- Google Maps API Key -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="YOUR_GOOGLE_MAPS_API_KEY" />
+
+        <!-- Main Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Register Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.RegisterActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Main Screen Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.Home"
+            android:exported="false">
+        </activity>
+
+        <!-- Add a Hike Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.AddAHike"
+            android:exported="true">
+        </activity>
+
+        <!-- List Main Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.Listmain"
+            android:exported="true">
+        </activity>
+
+        <!-- Search Trails Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.SearchTrailsActivity"
+            android:exported="false"
+            tools:ignore="Instantiatable">
+        </activity>
+
+        <!-- Observe Hike Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.ObserveHikeActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- List Observations Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.ListObservationsActivity"
+            android:exported="false"
+            tools:ignore="MissingClass">
+        </activity>
+
+        <!-- Google Map Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.GoogleMapActivity"
+            android:exported="false">
+        </activity>
+
+        <!-- Pedestrian Rating Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.PedestrianRating"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <!-- Hiking Guide Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.HikingGuide"
+            android:exported="true">
+        </activity>
+
+        <!-- Hiking Chat Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.HikingChatActivity"
+            android:exported="true">
+        </activity>
+
+        <!-- Set Goal Activity -->
+        <activity
+            android:name="com.example.HikingApp_GCS200222.SetGoalActivity"
+            android:exported="true">
+        </activity>
+    </application>
+</manifest>

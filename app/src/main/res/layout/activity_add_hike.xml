@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_walking"
+    android:padding="16dp"
+    tools:context="com.example.HikingApp_GCS200222.AddAHike">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/hikeNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Hike Name"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/hikeLocationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Location"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/hikeDateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Date"
+            android:inputType="date"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:id="@+id/difficultySpinner"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:entries="@array/difficulty_levels"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateIds"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/hikeDistanceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Hike Distance (in km)"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/descriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Description (Optional)"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp"
+            android:textStyle="bold"
+            />
+
+        <Spinner
+            android:id="@+id/difficultySpinner"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="48dp"
+            tools:ignore="DuplicateIds" />
+
+        <CheckBox
+            android:id="@+id/parkingCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Has Parking"
+            android:textStyle="bold"
+            />
+
+
+        <Button
+            android:id="@+id/addHikeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Add Hike"
+
+            />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="Back to Main Screen"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="150dp"
+
+            />
+        <Button
+            android:id="@+id/listButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="List"
+            android:layout_marginTop="-47dp"
+
+            />
+
+    </LinearLayout>
+</ScrollView>

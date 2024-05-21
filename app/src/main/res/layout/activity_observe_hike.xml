@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_walking"
+    android:padding="16dp"
+    tools:context="com.example.HikingApp_GCS200222.ObserveHikeActivity">
+
+    <EditText
+        android:id="@+id/locationEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Location"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/locationEditText"
+        android:layout_marginBottom="8dp"
+        android:hint="Time"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/eventDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/timeEditText"
+        android:layout_marginBottom="8dp"
+        android:hint="Event Description"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/additionalInfoEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventDescriptionEditText"
+        android:layout_marginBottom="8dp"
+        android:hint="Additional Info"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/noteEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/additionalInfoEditText"
+        android:layout_marginBottom="8dp"
+        android:hint="Note"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteEditText"
+        android:layout_marginBottom="16dp"
+        android:hint="Title"
+        android:minHeight="48dp" />
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleEditText"
+        android:layout_marginTop="-2dp"
+        android:text="Add"
+        android:backgroundTint="@android:color/holo_blue_light"
+
+    />
+
+    <ListView
+        android:id="@+id/observationListView"
+        android:layout_width="wrap_content"
+        android:layout_height="189dp"
+        android:layout_below="@+id/addButton"
+        android:layout_marginTop="11dp" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/observationListView"
+        android:layout_marginTop="6dp"
+        android:minHeight="48dp"
+        android:text="Clear Observations"
+        tools:ignore="TouchTargetSizeCheck"
+        android:layout_marginLeft="150dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+
+
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="78dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/clearButton"
+        android:layout_marginTop="-50dp"
+        android:text="Back"
+        tools:ignore="TouchTargetSizeCheck"
+        android:layout_marginLeft="0dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+
+        />
+
+    <Button
+        android:id="@+id/takePhotoButton"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/observationListView"
+        android:layout_below="@+id/addButton"
+        android:layout_alignEnd="@+id/titleEditText"
+        android:layout_marginTop="-54dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Take Photo" />
+
+    <ImageView
+        android:id="@+id/photoImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/takePhotoButton"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+
+</RelativeLayout>

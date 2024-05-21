@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_walking">
+
+    <TextView
+        android:id="@+id/listTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text=""
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/hikeListView"
+        android:layout_width="match_parent"
+        android:layout_height="643dp"
+        android:layout_below="@id/listTitle"
+        android:layout_marginTop="40dp" />
+
+    <Button
+        android:id="@+id/backToAddHikeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Back to Add Hike"
+
+        />
+
+
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Search Hikes"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="76dp"
+        android:layout_height="36dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Search"
+        android:textSize="9dp"
+        tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+
+</RelativeLayout>

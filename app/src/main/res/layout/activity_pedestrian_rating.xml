@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_walking"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/hikingDistanceEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hiking Distance (km)"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/completionTimeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Completion Time (hours)"
+        android:minHeight="48dp" />
+
+    <ListView
+        android:id="@+id/ratingListView"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/ratingButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Rating" />
+
+    <Button
+        android:id="@+id/backToMainButton"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="106dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Back" />
+</LinearLayout>

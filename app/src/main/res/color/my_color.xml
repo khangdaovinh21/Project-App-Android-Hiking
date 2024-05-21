@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Màu mặc định (trạng thái thông thường) -->
+    <item android:state_enabled="true" android:state_pressed="false">
+        <color android:color="#2196F3"/> <!-- Màu xanh dương -->
+    </item>
+
+    <!-- Màu khi được chạm vào (pressed) -->
+    <item android:state_enabled="true" android:state_pressed="true">
+        <color android:color="#1976D2"/> <!-- Màu xanh dương tối -->
+    </item>
+
+    <!-- Màu khi vô hiệu hóa -->
+    <item android:state_enabled="false">
+        <color android:color="#BDBDBD"/> <!-- Màu xám -->
+    </item>
+
+    <!-- Các màu khác -->
+    <item>
+        <color android:color="#F44336"/> <!-- Màu đỏ -->
+    </item>
+    <item>
+        <color android:color="#FF5722"/> <!-- Màu cam -->
+    </item>
+    <item>
+        <color android:color="#FFC107"/> <!-- Màu vàng -->
+    </item>
+    <item>
+        <color android:color="#4CAF50"/> <!-- Màu xanh lá cây -->
+    </item>
+    <item>
+        <color android:color="#FF9800"/> <!-- Màu cam nâu -->
+    </item>
+    <item>
+        <color android:color="#673AB7"/> <!-- Màu tím -->
+    </item>
+    <item>
+        <color android:color="#795548"/> <!-- Màu nâu -->
+    </item>
+
+</selector>

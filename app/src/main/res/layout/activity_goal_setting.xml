@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_walking"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.example.HikingApp_GCS200222.SetGoalActivity">
+
+    <TextView
+        android:id="@+id/goalTitleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Set Your Personal Goal"
+        android:textSize="24sp" />
+
+    <!-- Number of Hikes Goal -->
+    <TextView
+        android:id="@+id/hikesGoalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Number of Hikes Goal:"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/hikesGoalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the number of hikes"
+        android:minHeight="48dp"
+        android:textSize="16sp" />
+
+    <!-- Distance Goal (in km) -->
+    <TextView
+        android:id="@+id/distanceGoalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance Goal (in km):"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/distanceGoalEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the distance goal"
+        android:minHeight="48dp"
+        android:textSize="16sp" />
+
+    <!-- Set Your Personal Goal -->
+    <Button
+        android:id="@+id/setGoalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Set Your Personal Goal" />
+
+    <!-- Display Goals -->
+    <TextView
+        android:id="@+id/goalTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Your Personal Goals and Challenges:"
+        android:textSize="20sp" />
+
+    <ListView
+        android:id="@+id/goalsListView"
+        android:layout_width="match_parent"
+        android:layout_height="270dp" />
+
+    <!-- Save Goal -->
+    <Button
+        android:id="@+id/saveGoalButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Save Goal" />
+
+    <!-- Back to MainScreen button -->
+    <Button
+        android:id="@+id/backToMainButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="Back to MainScreen" />
+</LinearLayout>

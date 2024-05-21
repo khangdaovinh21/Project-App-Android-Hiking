@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="namescreenTextView" type="id" />
+    <item name="hikeLocationTextView" type="id" />
+    <item name="hikeDistanceTextView" type="id" />
+    <item name="hikeNameTextView" type="id" />
+    <item name="hikeDateTextView" type="id" />
+    <item name="hasParkingTextView" type="id" />
+    <item name="difficultyTextView" type="id" />
+    <item name="descriptionTextView" type="id" />
+    <item name="map" type="id" />
+    <item name="goalsListView" type="id" />
+    <item name="saveGoalButton" type="id" />
+    <item name="distanceGoalTextView" type="id" />
+    <item name="distanceGoalEditText" type="id" />
+    <item name="hikesGoalEditText" type="id" />
+    <item name="goalTitleTextView" type="id" />
+    <item name="hikesGoalTextView" type="id" />
+    <item name="goalTextView" type="id" />
+</resources>
